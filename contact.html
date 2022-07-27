@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css">
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function(){
+    $('#icon').click(function(){
+        $('ul').toggleClass('show');
+    });
+});
+    </script>
+    <title>RESTAURANT</title>
+</head>
+<body>
+    <header>
+        <img src="images/Good Kitchen.jpg" alt="">
+        <ul class="show"> 
+            <li><a  href="index.html" >Home</a></li>
+            <li><a  href="recette_cyril2.html">French Recipes</a></li>
+            <li><a  href="recette_MAGH.html">Maghreb Recipes</a></li>
+            <li><a  href="recette_kn.html">Armenian Recipes</a></li>
+            <li><a  href="contact.html">Contact</a></li>
+        </ul>
+        <label id="icon">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+    </header>
+    <section class="contact">
+        <form>
+            <h2>Contact Us</h2>
+            <label for="name">First Name:</label>
+            <input type="text" id="name" name="Nom" placeholder="First Name"/>
+            <label for="firstname">Last Name:</label>
+            <input type="text" id="firstname" name="Prénom" placeholder="Last Name"/>
+            <label for="email">email:</label>
+            <input type="text" id="email" name="email" placeholder="email"/>
+            <label for ="message">Message:</label>
+            <textarea type="text" id="message" name="Message" placeholder="Your Message Here..."></textarea>
+            <input type="submit" id="submit" value="Submit"/>
+        </form>
+    </section>
+    <footer>
+        <div class="infos"> 
+            <a href="">Contact us</a>
+            <div class="icons">
+                <h4>Follow us :</h4>
+                <a href=""><i class="fa-brands fa-facebook-messenger"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                <a href=""><i class="fa-brands fa-instagram-square"></i></a>
+            </div> 
+        </div>    
+        <P>© 2022 -GOOD KITCHEN</P>
+    </footer> 
+</body>
+</html>
